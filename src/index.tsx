@@ -23,7 +23,7 @@ function Badge(
   const src = encodeURI(
     `https://img.shields.io/badge/${encodedName} -${
       backgroundColor || hex
-    }.svg?&style=for-the-badge&logo=${name}&logoColor=${logoColor || 'white'}`
+    }.svg?&style=flat-square&logo=${name}&logoColor=${logoColor || 'white'}`
   ).replace(/#/g, '%23')
 
   const customProps = ['name', 'logoColor', 'label', 'backgroundColor']
